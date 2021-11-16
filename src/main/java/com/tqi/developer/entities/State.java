@@ -14,32 +14,27 @@ public class State  implements Serializable{
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	private Long id;
+	@Column(name = "Id")
+	private Integer id;
 	
-	@Column(name ="codigoUf")
-	private int codigo;
+	@Column(name ="CodigoUf")
+	private Integer codigo;
 	
-	@Column(name = "nome")
+	@Column(name = "Nome")
 	private String name;
 	
 	@Column(name = "Uf")
    private String uf;
    
-	@Column(name = "regiao")
-   private int region;
+	@Column(name = "Regiao")
+   private Integer region;
 	
 	
 	public State ( ){
 		
 	}
 
-	public Long getId() {
-		return id;
-	}
 
-	public void setId(Long id) {
-		this.id = id;
-	}
 
 	public int getCodigo() {
 		return codigo;
