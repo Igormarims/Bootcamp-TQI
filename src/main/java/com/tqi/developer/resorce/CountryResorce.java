@@ -1,4 +1,4 @@
-package com.tqi.java.developer.resorce;
+package com.tqi.developer.resorce;
 
 import java.util.List;
 
@@ -11,12 +11,12 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.tqi.java.developer.entities.Country;
-import com.tqi.java.developer.service.CountryService;
+import com.tqi.developer.entities.Country;
+import com.tqi.developer.service.CountryService;
 
 @RestController
 @RequestMapping(value = "/countries")
-public class CountryResoucer {
+public class CountryResorce {
 
 	@Autowired
 	private CountryService service;
@@ -39,4 +39,8 @@ public class CountryResoucer {
 		return ResponseEntity.ok().body(country);
 		
 	}
+
+
+
 }
+

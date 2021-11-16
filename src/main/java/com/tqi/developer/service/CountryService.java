@@ -1,4 +1,4 @@
-package com.tqi.java.developer.service;
+package com.tqi.developer.service;
 
 import java.util.List;
 import java.util.Optional;
@@ -8,8 +8,8 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
-import com.tqi.java.developer.entities.Country;
-import com.tqi.java.developer.repositories.CountryRepository;
+import com.tqi.developer.Repositoy.CountryRepository;
+import com.tqi.developer.entities.Country;
 
 @Service
 public class CountryService {

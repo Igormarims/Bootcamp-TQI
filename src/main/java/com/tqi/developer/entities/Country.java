@@ -1,17 +1,16 @@
-package com.tqi.java.developer.entities;
-
-import java.io.Serializable;
+package com.tqi.developer.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+
+
 @Entity
 @Table(name = "pais")
-public class Country implements Serializable {
-	
-   private static final long serialVersionUID = 1L;
+public class Country {
 
+	
 	@Id
 	private Long id;
 	
@@ -57,7 +56,6 @@ public class Country implements Serializable {
 	public void setBacen(Integer bacen) {
 		this.bacen = bacen;
 	}
-	
 	
 	
 }
